@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'; // Importing the CSS for styles
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="hero-section">
+        {/* Text container */}
+        <div className="text-container">
+          <h1>Welcome to Social Dimension by Seesaw</h1>
+          <p>Engage in meaningful conversations and fun activities with your partner.</p>
+        </div>
+        
+        {/* Hero Image */}
+        <img src={`${process.env.PUBLIC_URL}/images/hero.png`} className="hero-image" alt="Hero" />
+        
+        {/* Buttons container */}
+        <div className="buttons-container">
+          <a href="/player1" className="btn">Session for Player 1</a>
+          <a href="/player2" className="btn">Session for Player 2</a>
+        </div>
+      </div>
     </div>
   );
 }

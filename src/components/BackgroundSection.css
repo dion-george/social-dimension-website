@@ -1,0 +1,56 @@
+.background-section {
+  height: 100vh; /* Use 'height' instead of 'min-height' to strictly enforce the viewport height */
+  width: 100%;
+  background-image: url('./../../public/images/couple_scenary.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Changed to 'flex-start' */
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding is included in the height calculation */
+  overflow: hidden; /* Hides any content that might overflow */
+}
+
+.tagline-container {
+  text-align: left; /* Aligns the content of the tagline container to the left */
+  width: 80%; /* Adjust as needed or remove if the full width is not required */
+  align-self: flex-start; /* Ensures the container starts from the left */
+  position: absolute;
+  bottom: 12%;
+  left: 10%; /* Adjusts the left positioning as per your design */
+}
+
+.tagline-large-wrapper {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px 20px; /* Padding for readability */
+  display: inline-block; /* Ensures the wrapper fits the content width */
+  text-align: left; /* This ensures text within is aligned to the left */
+}
+
+.tagline-large {
+  font-size: 44px;
+  color: #000;
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-weight: 700; /* Bold weight for Merriweather */
+  text-align: left; /* Explicitly aligns the text to the left */
+}
+
+.tagline-small, .tagline-large-wrapper {
+  text-align: left; /* Ensures text is aligned to the left */
+  font-size: 24px;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500; /* Medium weight for Poppins */
+}
+
+h1 {
+  color: #000000;
+  margin: 0 0 20px;
+  padding-top: 0px;
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500; /* Medium weight for Poppins */
+}

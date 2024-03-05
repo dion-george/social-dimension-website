@@ -1,0 +1,71 @@
+.content-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FEF9E6;
+  padding: 40px 20px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Increases gap between buttons */
+}
+
+.btn {
+  padding: 15px 30px; /* Increases padding for larger size */
+  font-size: 18px; /* Larger font size for better readability */
+  font-weight: 500; /* Medium weight for a bolder appearance */
+  letter-spacing: 0.5px; /* Slightly increases spacing between letters */
+  border: none; /* Removes border for a cleaner look */
+  border-radius: 8px; /* Rounded corners for a modern appearance */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for effects */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500; /* Medium weight for Poppins */
+}
+
+.btn-player1 {
+  background-color: #6A4A5F;
+  color: #FEF9E6;
+}
+
+.btn-player2 {
+  background-color: #FEF9E6; /* Light background color for the button */
+  color: #6A4A5F; /* Dark text color for contrast */
+  border: 2px solid #6A4A5F; /* Adds a contrasting border */
+  box-shadow: 0 2px 4px rgba(106, 74, 95, 0.2); /* Subtle shadow for depth, matching the color theme */
+}
+
+.btn-player2:hover {
+  background-color: #dddcd5; /* A slightly darker shade on hover to maintain contrast */
+  color: #6A4A5F; /* Keeps text color consistent */
+  border-color: #6A4A5F; /* Ensures border color remains consistent */
+  box-shadow: 0 4px 8px rgba(106, 74, 95, 0.3); /* Enhances shadow for a lifted effect */
+}
+
+.btn:hover {
+  transform: translateY(-2px); /* Slight lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Enhanced shadow for hover effect */
+}
+
+@media (max-width: 768px) {
+  .btn-container {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 90%; /* Full width buttons on smaller screens */
+    margin-bottom: 10px; /* Adds margin to avoid touching */
+  }
+}
+
+h2 {
+  color: #000;
+  text-align: center; /* Center-align the section title */
+  margin: 0 0 20px 0; /* Adjust bottom margin to space out from the buttons */
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+}
